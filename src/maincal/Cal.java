@@ -33,6 +33,7 @@ public class Cal extends JFrame {
        setTitle("CALCULADORA" );
        setSize(500, 300);
        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     private void iniciarComponentes() {
@@ -40,7 +41,7 @@ public class Cal extends JFrame {
         sumar = new JButton ("Fibbonacci");
         multiplicar = new JButton ("multiplicar");
         dividir= new JButton ("dividir");
-        num = new JTextField ("Inserte un numero");
+        num = new JTextField("Número");
         num.setSize(100, 50);
         
         sumar.addActionListener(new ActionListener() {
@@ -64,7 +65,7 @@ public class Cal extends JFrame {
         add(sumar);
         add(num);
         
-        setLocation (300,100);
+        setLocation (200,100);
         setVisible(true);
         
     }
